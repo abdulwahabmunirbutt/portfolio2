@@ -1,0 +1,93 @@
+body {
+    font-family: 'Sono', sans-serif;
+  }
+  .gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+  .pricing-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  h2{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .pricing-plan{
+
+    width: 400px;
+    background-color: rgb(111, 220, 198);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+  }
+  .plan-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .plan-price{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .plan-features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .plan-features li{
+    margin-bottom: 20px;
+  }
+  .plan-button{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px;
+  }
+  .footer{
+    background-color: cyan;
+    padding: 10px;
+    text-align: center;
+  }
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+    .pricing-container{
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .nav-link{
+    margin-top: 30px;
+    color: whitesmoke;
+  }
+
+  .follous{
+    color: whitesmoke;
+    margin-right: 50px;
+   }
